@@ -49,10 +49,13 @@ const printPassTimes = function(passTimes) {
 };
 
 
-nextISSTimesForMyLocation((error, passTimes) => {
-  if (error) {
-    return console.log("It didn't work!", error);
-  }
-  //print out the dates
-  printPassTimes(passTimes);
-});
+// nextISSTimesForMyLocation((error, passTimes) => {
+//   if (error) {
+//     return console.log("It didn't work!", error);
+//   }
+//   //print out the dates
+//   printPassTimes(passTimes);
+// });
+
+
+module.exports = { printPassTimes };
